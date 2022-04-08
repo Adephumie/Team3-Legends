@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Restaurant Survey Form</title>
+    <link rel="stylesheet" href="/resources/css/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="survey_heading">
+        <h1>OurRestaurant Survey Form</h1>
+      </div>
+      <div class="sub_heading">
+        <h3>
+          Thank you for taking the time to help us improve on our services.
+        </h3>
+      </div>
+      <form>
+        <div class="basic_info">
+          <label for="name">Name:</label><br />
+          <input
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+          /><br /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+          /><br /><br />
+        </div>
+        <div>
+          <label for="age">What age-group do you belong to?</label><br />
+          <input type="radio" id="18" name="age_group" />
+          <label for="18">18</label><br />
+          <input type="radio" id="19-30" name="age_group" />
+          <label for="19-30">19-30</label><br />
+          <input type="radio" id="31-40" name="age_group" />
+          <label for="31-40">31-40</label><br />
+          <input type="radio" id="41-55" name="age_group" />
+          <label for="41-55">41-55</label><br />
+          <input type="radio" id="Over_55" name="age_group" />
+          <label for="Over_55">Over 55</label><br /><br />
+        </div>
+
+        <div>
+          <label for="discovery">How did you discover OurRestaurant?</label
+          ><br />
+          <input list="discovery2" name="discovery2" />
+          <datalist id="discovery2">
+            <option value="Facebook"></option>
+            <option value="Instagram"></option>
+            <option value="Twitter"></option>
+            <option value="Family or Friend"></option></datalist
+          ><br /><br />
+        </div>
+        <div>
+          <label for="food_quality"
+            >How would you rate OurRestaurant food quality?</label
+          ><br />
+          <input type="radio" id="bad" name="food_quality" />
+          <label for="bad">Bad</label><br />
+          <input type="radio" id="poor" name="food_quality" />
+          <label for="poor">Poor</label><br />
+          <input type="radio" id="average" name="food_quality" />
+          <label for="average">Average</label><br />
+          <input type="radio" id="great" name="food_quality" />
+          <label for="great">Great</label><br />
+          <input type="radio" id="excellent" name="food_quality" />
+          <label for="excellent">Excellent</label><br /><br />
+        </div>
+        <div>
+          <label for="food_menu"
+            >In your experience, do you feel our food menu is varied enough to
+            satisfy every preference?</label
+          ><br />
+          <input type="radio" id="yes" name="food_menu" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="no" name="food_menu" />
+          <label for="no">No</label><br /><br />
+          <label for="food_menu"
+            >If No, then what else would you like to see in our menu?</label
+          >
+          <input type="text" /><br /><br />
+        </div>
+        <div>
+          <label for="drinks_menu">How would you rate our drinks menu?</label>
+          <br />
+          <input type="radio" id="bad" name="drinks_menu" />
+          <label for="bad">Bad</label><br />
+          <input type="radio" id="poor" name="drinks_menu" />
+          <label for="poor">Poor</label><br />
+          <input type="radio" id="average" name="drinks_menu" />
+          <label for="average">Average</label><br />
+          <input type="radio" id="great" name="drinks_menu" />
+          <label for="great">Great</label><br />
+          <input type="radio" id="excellent" name="drinks_menu" />
+          <label for="excellent">Excellent</label><br /><br />
+        </div>
+        <div>
+          <label for="drinks_list"
+            >Was there anything missing from the drinks list?</label
+          ><br />
+          <input type="radio" id="yes" name="drinks_list" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="no" name="drinks_list" />
+          <label for="no">No</label><br /><br />
+          <label for="drinks_list"
+            >If Yes, then what more would you like to see in our drinks
+            menu?</label
+          >
+          <input type="text" /><br /><br />
+        </div>
+        <div>
+          <label for="cleanliness"
+            >How would you rate the cleanliness of OurRestaurant on a scale of 1
+            to 5, with 1 being very poor and 5 being Excellent.</label
+          >
+          <br />
+          <input type="radio" id="bad" name="drinks_menu" />
+          <label for="bad">1</label><br />
+          <input type="radio" id="poor" name="drinks_menu" />
+          <label for="poor">2</label><br />
+          <input type="radio" id="average" name="drinks_menu" />
+          <label for="average">3</label><br />
+          <input type="radio" id="great" name="drinks_menu" />
+          <label for="great">4</label><br />
+          <input type="radio" id="excellent" name="drinks_menu" />
+          <label for="excellent">5</label><br /><br />
+        </div>
+        <div>
+          <label for="referral"
+            >How likely will you recommend us to a family member or
+            friend?</label
+          >
+          <br />
+          <input type="radio" id="definitely" name="referral" />
+          <label for="definitely">Definitely</label><br />
+          <input type="radio" id="maybe" name="referral" />
+          <label for="maybe">Maybe</label><br />
+          <input type="radio" id="no_way" name="referral" />
+          <label for="no_way">No way</label><br />
+          <br />
+        </div>
+        <div>
+          <label for="revisit"
+            >How likely will you revisit OurRestaurant again?</label
+          >
+          <br />
+          <input type="radio" id="definitely" name="revisit" />
+          <label for="definitely">Definitely</label><br />
+          <input type="radio" id="maybe" name="revisit" />
+          <label for="maybe">Maybe</label><br />
+          <input type="radio" id="no_way" name="revisit" />
+          <label for="no_way">No way</label><br />
+          <br />
+        </div>
+        <div>
+          <label for="final_note"
+            >Is there anything we can do to motivate you to visit us more
+            often?</label
+          ><br />
+          <textarea
+            name="message"
+            id="final_note"
+            cols="30"
+            rows="10"
+            placeholder="Enter your suggestions here..."
+          ></textarea
+          ><br /><br />
+        </div>
+        <div class="submit_form">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
